@@ -6,10 +6,16 @@ plugins {
 
 android {
     namespace = "com.example.smart_blind_assistant"
-
-    // ✅ REQUIRED for latest AndroidX libraries
     compileSdk = 36
-    ndkVersion = flutter.ndkVersion
+    buildToolsVersion = "36.0.0"
+
+    defaultConfig {
+        applicationId = "com.example.smart_blind_assistant"
+        minSdk = 21
+        targetSdk = 36
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -17,19 +23,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
-    defaultConfig {
-        applicationId = "com.example.smart_blind_assistant"
-
-        minSdk = 21
-
-        // Can stay 34 or be 36 — both are fine
-        targetSdk = 36
-
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        jvmTarget = "17"
     }
 
     buildTypes {
@@ -38,7 +32,6 @@ android {
         }
     }
 }
-
 
 flutter {
     source = "../.."
