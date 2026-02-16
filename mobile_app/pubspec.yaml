@@ -21,14 +21,14 @@ dependencies:
   image_picker: ^1.0.4
   
   # Voice & Audio
-  speech_to_text: ^6.3.0
+  speech_to_text: ^6.6.0
   flutter_tts: ^3.7.0
   
   # System & Hardware
   geolocator: ^10.1.0
   permission_handler: ^11.0.1
   sensors_plus: ^3.1.0 # For accelerometer if needed
-  vibration: ^1.8.4  # For haptic feedback
+  vibration: ^2.0.0  # For haptic feedback
   
   # Data & Networking
   http: ^1.1.0
