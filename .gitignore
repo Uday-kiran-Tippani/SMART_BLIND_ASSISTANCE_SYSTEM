@@ -1,0 +1,38 @@
+
+backend/venv/
+backend/__pycache__/
+
+mobile_app/build/
+mobile_app/.dart_tool/
+mobile_app/.gradle/
+
+*.apk
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Flutter
+build/
+.dart_tool/
+.packages
+.pub-cache/
+
+# Android
+.gradle/
+local.properties
+android/.gradle/
+android/build/
+
+# APK
+*.apk
+
+# ML Models (if large)
+*.pt
+*.h5
+*.tflite
+
+# VSCode
+.vscode/
+

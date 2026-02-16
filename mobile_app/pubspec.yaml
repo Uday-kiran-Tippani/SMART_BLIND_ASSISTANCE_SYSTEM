@@ -1,0 +1,48 @@
+name: smart_blind_assistant
+description: AI Mobile Assistant for Blind Users with Object Detection and Voice Navigation.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & State Management
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.5
+  
+  # Camera & Vision
+  camera: ^0.10.5
+  google_mlkit_object_detection: ^0.11.0
+  google_mlkit_face_detection: ^0.9.0
+  image_picker: ^1.0.4
+  
+  # Voice & Audio
+  speech_to_text: ^6.3.0
+  flutter_tts: ^3.7.0
+  
+  # System & Hardware
+  geolocator: ^10.1.0
+  permission_handler: ^11.0.1
+  sensors_plus: ^3.1.0 # For accelerometer if needed
+  vibration: ^1.8.4  # For haptic feedback
+  
+  # Data & Networking
+  http: ^1.1.0
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
