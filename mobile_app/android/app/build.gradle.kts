@@ -7,8 +7,8 @@ plugins {
 android {
     namespace = "com.example.smart_blind_assistant"
 
-    // ✅ Explicitly set SDK versions (Fixes lStar error)
-    compileSdk = 34
+    // ✅ REQUIRED for latest AndroidX libraries
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -23,11 +23,10 @@ android {
     defaultConfig {
         applicationId = "com.example.smart_blind_assistant"
 
-        // ✅ Safe minimum
         minSdk = 21
 
-        // ✅ Must match compileSdk
-        targetSdk = 34
+        // Can stay 34 or be 36 — both are fine
+        targetSdk = 36
 
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -35,11 +34,11 @@ android {
 
     buildTypes {
         release {
-            // Still using debug signing for Codemagic APK build
             signingConfig = signingConfigs.getByName("debug")
         }
     }
 }
+
 
 flutter {
     source = "../.."
